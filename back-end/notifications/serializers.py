@@ -3,21 +3,17 @@ from .models import Notification
 from django.contrib.auth.models import User
 
 
-
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'first_name', 'last_name'] 
-
+        fields = ['id', 'username', 'first_name', 'last_name']
 
 
 class NotificationSerializer(serializers.ModelSerializer):
-    entregado_a = UserSerializer(read_only=True)
+    entregado_a = UserSerializer(read_only=True)  # para que se  muestre datos del usuario en el frontend
     entregado_a_id = serializers.PrimaryKeyRelatedField(
-        queryset=User.objects.all(), source='entregado_a', write_only=True, required=False
+        queryset=User.objects.all(), source='entregado_a', write_only=True
     )
-
-
 
     class Meta:
         model = Notification

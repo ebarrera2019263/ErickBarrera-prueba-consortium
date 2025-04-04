@@ -1,7 +1,10 @@
 from rest_framework import viewsets
 from django.core.mail import send_mail
 from .models import Notification
-from .serializers import NotificationSerializer
+from django.contrib.auth.models import User
+from .serializers import NotificationSerializer, UserSerializer
+
+
 
 
 class NotificationViewSet(viewsets.ModelViewSet):
@@ -47,3 +50,6 @@ class NotificationViewSet(viewsets.ModelViewSet):
             ['ptoribio@consortiumlegal.com'],  # Cambiar a correo oficial al final
             fail_silently=False,
         )
+class UsuarioViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

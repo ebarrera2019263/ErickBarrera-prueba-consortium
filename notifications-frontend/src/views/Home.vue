@@ -1,4 +1,3 @@
-<!-- src/views/HomeView.vue -->
 <template>
   <div class="home">
     <h1>Registro de Notificaciones 📩</h1>
