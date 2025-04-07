@@ -9,7 +9,7 @@
 import NotificationForm from '../components/NotificationForm.vue'
 
 export default {
-  name: 'HomeView', //se le agrega nombre multi-palabra
+  name: 'HomeView',
   components: {
     NotificationForm,
   },
