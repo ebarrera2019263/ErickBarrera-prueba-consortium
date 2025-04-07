@@ -89,14 +89,14 @@ USE_TZ = True
 # CORS
 CORS_ALLOW_ALL_ORIGINS = True
 
-# ✅ Static files (CSS, JavaScript, Images)
+#  Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # <-- esto arregla collectstatic en Render
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# 📧 Email settings
+# Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -104,4 +104,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'alamedagta21@gmail.com'
 EMAIL_HOST_PASSWORD = 'rvwz icbj wrll ctcb'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-NOTIFICATION_RECIPIENT = 'ebarreraochoa11@gmail.com'
+NOTIFICATION_RECIPIENT = 'ptoribio@consortiumlegal.com'
