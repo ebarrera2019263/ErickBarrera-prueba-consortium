@@ -167,7 +167,7 @@ export default {
         }
 
         await api.post('/notificaciones/', payload)
-        alert('✅ Notificación registrada')
+        alert(' Notificación registrada')
         this.resetForm()
         this.getNotificaciones()
         document.querySelector('#modalForm .btn-close').click()
