@@ -171,7 +171,7 @@ export default {
         this.getNotificaciones()
         document.querySelector('#modalForm .btn-close').click() // cerrar modal
       } catch (error) {
-        console.error('❌ Error al enviar:', error.response?.data || error)
+        console.error(' Error al enviar:', error.response?.data || error)
         alert('Error: ' + JSON.stringify(error.response?.data || {}))
       }
     },

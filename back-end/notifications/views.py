@@ -47,7 +47,7 @@ class NotificationViewSet(viewsets.ModelViewSet):
             subject,
             message,
             'alamedagta21@gmail.com',  # o 'no-reply@tuapp.com'
-            ['ptoribio@consortiumlegal.com'],  # Cambiar a correo oficial al final
+            ['ebarreraochoa11@gmail.com'],  # Cambiar a correo oficial al final
             fail_silently=False,
         )
 class UsuarioViewSet(viewsets.ReadOnlyModelViewSet):
